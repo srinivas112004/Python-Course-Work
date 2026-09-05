@@ -1,0 +1,282 @@
+# DATA ANALYSIS – NOTES
+
+## 1. What is Data Analysis?
+
+Data Analysis is the process of collecting, cleaning, transforming, analyzing, and interpreting data to find useful patterns, trends, and insights that help in decision-making.
+
+Basic Flow:
+
+Collect Data → Clean Data → Explore Data → Analyze Data → Visualize → Interpret → Decision
+
+## 2. Data Analysis Process
+
+### Step 1: Data Collection
+
+Collect data from different sources.
+
+Examples:
+
+* Databases
+* Excel / CSV files
+* APIs
+* Websites
+* Surveys
+* Applications
+
+### Step 2: Data Cleaning
+
+Raw data may contain:
+
+* Missing values
+* Duplicate values
+* Incorrect values
+* Wrong data types
+* Outliers
+
+Common operations:
+
+* Remove duplicates
+* Handle missing values
+* Correct incorrect data
+* Convert data types
+
+### Step 3: Exploratory Data Analysis (EDA)
+
+EDA is used to understand the data and discover patterns.
+
+We check:
+
+* Mean
+* Median
+* Mode
+* Minimum and maximum
+* Distribution
+* Outliers
+* Relationships between variables
+
+Python example:
+
+df.describe()
+
+### Step 4: Statistical Analysis
+
+Statistical analysis uses statistical methods to understand and summarize data.
+
+Important concepts:
+
+* Mean – Average value
+* Median – Middle value
+* Mode – Most frequently occurring value
+* Range – Difference between maximum and minimum
+* Variance – Measures data spread
+* Standard Deviation – Measures how far values are spread from the mean
+* Correlation – Measures the relationship between two variables
+
+### Step 5: Data Visualization
+
+Convert data into charts and graphs to make it easier to understand.
+
+Examples:
+
+* Bar chart – Compare categories
+* Line chart – Show trends over time
+* Pie chart – Show proportions
+* Histogram – Show data distribution
+* Scatter plot – Show relationships
+
+Tools:
+
+* Matplotlib
+* Seaborn
+* Power BI
+* Tableau
+* Excel
+
+### Step 6: Interpretation
+
+Understand what the analysis tells us.
+
+Example:
+
+"Sales increased by 20% compared to last month."
+
+### Step 7: Decision Making
+
+Use the insights from data to make business or organizational decisions.
+
+Example:
+
+"Increase marketing investment because sales are highest in Hyderabad."
+
+# 3. Statistical Analysis
+
+Statistical Analysis is the process of using statistical methods to summarize, understand, compare, and identify relationships in data.
+
+It mainly answers:
+
+"What does the data tell us?"
+
+Examples:
+
+* Average salary of employees
+* Average sales
+* Customer age distribution
+* Relationship between advertising and sales
+* Variation in product prices
+
+## Important Statistical Measures
+
+Mean:
+Average of all values.
+
+Median:
+Middle value after sorting the data.
+
+Mode:
+Most frequently occurring value.
+
+Variance:
+Measures how much the data is spread around the mean.
+
+Standard Deviation:
+Measures the amount of variation or spread in the data.
+
+Correlation:
+Measures the strength and direction of the relationship between two variables.
+
+# 4. Predictive Analysis
+
+Predictive Analysis uses historical data, statistical techniques, and machine learning algorithms to predict future outcomes.
+
+It answers:
+
+"What is likely to happen in the future?"
+
+Examples:
+
+* Predict future sales
+* Predict house prices
+* Predict customer churn
+* Predict whether an email is spam
+* Predict loan approval
+* Predict product demand
+
+## Techniques Used in Predictive Analysis
+
+### Regression
+
+Used to predict numerical values.
+
+Examples:
+
+* House price
+* Salary
+* Sales
+* Revenue
+
+Algorithms:
+
+* Linear Regression
+* Decision Tree Regression
+* Random Forest Regression
+
+### Classification
+
+Used to predict categories/classes.
+
+Examples:
+
+* Spam / Not Spam
+* Yes / No
+* Pass / Fail
+* Approved / Rejected
+
+Algorithms:
+
+* Logistic Regression
+* Decision Tree
+* Random Forest
+* KNN
+* SVM
+
+### Time Series Analysis
+
+Used to predict values based on time-based historical data.
+
+Examples:
+
+* Daily sales
+* Monthly revenue
+* Website traffic
+* Temperature
+* Product demand
+
+# 5. Statistical Analysis vs Predictive Analysis
+
+Statistical Analysis:
+
+* Focuses mainly on understanding existing data.
+* Answers "What happened?" and "What does the data tell us?"
+* Uses mean, median, variance, standard deviation, correlation, etc.
+
+Predictive Analysis:
+
+* Focuses on predicting future outcomes.
+* Answers "What is likely to happen?"
+* Uses regression, classification, time-series methods, and machine learning.
+
+# 6. Four Types of Data Analysis
+
+1. Descriptive Analysis
+   → What happened?
+
+   Example:
+   "Sales increased by 20%."
+
+2. Diagnostic Analysis
+   → Why did it happen?
+
+   Example:
+   "Sales increased because advertising increased."
+
+3. Predictive Analysis
+   → What will probably happen?
+
+   Example:
+   "Sales are expected to increase next month."
+
+4. Prescriptive Analysis
+   → What should we do?
+
+   Example:
+   "Increase advertising in cities with high conversion rates."
+
+# 7. Easy Way to Remember
+
+Descriptive   → What happened?
+Diagnostic    → Why did it happen?
+Predictive    → What will happen?
+Prescriptive  → What should we do?
+
+# 8. Real-World Example
+
+E-commerce company:
+
+1. Collect customer and sales data.
+2. Clean missing and duplicate records.
+3. Perform EDA.
+4. Use statistical analysis to find average sales and customer behavior.
+5. Use visualization to identify sales trends.
+6. Use predictive analysis to predict future sales.
+7. Use the results to make business decisions.
+
+## Interview Definition
+
+Data Analysis:
+"Data analysis is the process of collecting, cleaning, transforming, analyzing, and interpreting data to extract useful insights and support better decision-making."
+
+Statistical Analysis:
+"Statistical analysis uses statistical methods to understand patterns, relationships, variation, and characteristics within data."
+
+Predictive Analysis:
+"Predictive analysis uses historical data, statistical techniques, and machine learning algorithms to predict future outcomes."
