@@ -1,0 +1,586 @@
+OBJECT-ORIENTED PROGRAMMING (OOP)
+
+1. WHAT IS OOP?
+
+OOP (Object-Oriented Programming) is a programming approach where a program is designed using classes and objects.
+
+An object represents a real-world entity, and a class defines the data and behavior that the entity should have.
+
+Example: ATM Application
+
+ATM can be represented using a class.
+
+Data:
+- Account number
+- PIN
+- Balance
+
+Behavior:
+- Withdraw money
+- Deposit money
+- Check balance
+
+In simple words:
+OOP organizes a program around objects that contain data and the operations performed on that data.
+
+
+2. WHY DO WE NEED OOP?
+
+Procedural programming works well for small programs. But when applications become large, managing many variables and functions becomes difficult.
+
+OOP helps us to:
+
+- Organize code into classes and objects.
+- Reuse existing code.
+- Protect data from unwanted access.
+- Make large applications easier to maintain.
+- Model real-world entities naturally.
+- Make applications easier to extend.
+- Divide a large application into smaller, manageable components.
+
+Example: Instagram
+
+Instagram is a large application with many entities:
+
+- User
+- Post
+- Comment
+- Message
+- Story
+- Notification
+
+Instead of putting all the functionality into one large program, OOP allows each entity to be represented using classes and objects.
+
+User:
+- username
+- email
+- followers
+- follow()
+
+Post:
+- image
+- caption
+- likes
+- like()
+
+Comment:
+- text
+- reply()
+
+This makes the application easier to develop, maintain, and extend.
+
+
+3. WHAT DOES OOP CONSIST OF?
+
+The important concepts of OOP are:
+
+1. Class
+2. Object
+3. Encapsulation
+4. Inheritance
+5. Polymorphism
+6. Abstraction
+
+The four major principles are called the 4 PILLARS OF OOP:
+
+1. Encapsulation
+2. Inheritance
+3. Polymorphism
+4. Abstraction
+
+
+4. CLASS
+
+A class is a blueprint or template for creating objects.
+
+It defines:
+- What data an object will have.
+- What operations an object can perform.
+
+Real-world example: Smartphone
+
+A Phone class can define:
+
+Data:
+- Brand
+- Model
+- Battery
+
+Behavior:
+- Call
+- Send message
+- Take photo
+
+The class is only a blueprint. It is not an actual physical phone.
+
+
+5. OBJECT
+
+An object is an instance of a class.
+
+Example:
+
+Phone Class
+|
+|-- iPhone 17       -> Object
+|-- Samsung S26     -> Object
+|-- Google Pixel    -> Object
+
+All these phones can have the properties and behaviors defined by the Phone class, but their values can be different.
+
+Real-world example: PhonePe
+
+Suppose PhonePe has a User class.
+
+User Class:
+
+Data:
+- Name
+- Phone number
+- Balance
+
+Behavior:
+- Send money
+- Receive money
+- Check balance
+
+Different PhonePe users can be different objects:
+
+User Class
+|
+|-- Srinivas -> Object
+|-- Rahul    -> Object
+|-- Anil     -> Object
+
+
+6. FOUR PILLARS OF OOP
+
+
+6.1 ENCAPSULATION
+
+Encapsulation means combining data and the methods that operate on that data into one unit and controlling access to the data.
+
+Real-world example: ATM
+
+When you use an ATM, you can perform operations such as:
+
+- Withdraw money
+- Deposit money
+- Check balance
+
+But you cannot directly modify the bank's internal database and change your balance.
+
+You interact with the account through authorized operations.
+
+Example:
+
+ATM
+|
+|-- Account Balance
+|-- PIN
+|-- Withdraw
+|-- Deposit
+|-- Check Balance
+
+In simple words:
+
+Encapsulation = Data protection + Controlled access
+
+
+6.2 INHERITANCE
+
+Inheritance allows one class to acquire properties and behaviors from another class.
+
+Real-world example: Instagram
+
+Imagine Instagram has different types of users:
+
+User
+|
+|-- NormalUser
+|-- Creator
+|-- BusinessUser
+
+Common functionality can be provided by the User class.
+
+User:
+- username
+- email
+- login()
+- logout()
+
+Creator:
+- create_post()
+- view_insights()
+
+BusinessUser:
+- create_ad()
+- view_business_insights()
+
+Creator and BusinessUser can reuse common functionality from User.
+
+In simple words:
+
+Inheritance = Reusing properties and behavior from another class
+
+
+6.3 POLYMORPHISM
+
+Polymorphism means "many forms."
+
+The same operation can behave differently depending on the object.
+
+Real-world example: PhonePe
+
+Consider the payment operation:
+
+pay()
+
+A user may pay using:
+
+- UPI
+- Credit Card
+- Debit Card
+- Wallet
+
+The operation is conceptually the same, but the actual process can be different.
+
+UPI Payment:
+- UPI authentication
+
+Credit Card Payment:
+- Card verification
+
+Wallet Payment:
+- Wallet balance check
+
+Same operation:
+pay()
+
+Different behavior.
+
+In simple words:
+
+Polymorphism = Same operation, different behavior
+
+
+6.4 ABSTRACTION
+
+Abstraction means hiding complex internal implementation and showing only the necessary functionality to the user.
+
+Real-world example: ATM
+
+When you withdraw money:
+
+1. Enter PIN
+2. Select Withdraw
+3. Enter Amount
+4. Receive Cash
+
+You do not need to know what happens internally.
+
+Internally, the ATM may perform:
+
+ATM
+|
+|-- Connect to bank server
+|-- Authenticate user
+|-- Check account
+|-- Verify balance
+|-- Process transaction
+|-- Dispense cash
+
+All this complexity is hidden from the user.
+
+The user only sees:
+
+Withdraw Money
+
+In simple words:
+
+Abstraction = Hide complexity + Show only what is necessary
+
+
+7. REAL-WORLD APPLICATION EXAMPLES
+
+
+Instagram
+
+Possible classes:
+- User
+- Post
+- Comment
+- Story
+- Message
+- Notification
+
+Objects:
+- Individual users
+- Individual posts
+- Individual comments
+- Individual messages
+
+OOP helps Instagram manage a huge number of entities and their relationships.
+
+
+ATM
+
+Possible classes:
+- ATM
+- Account
+- Customer
+- Transaction
+
+Objects:
+- Individual ATM machines
+- Individual bank accounts
+- Individual customers
+- Individual transactions
+
+OOP concepts:
+- Encapsulation -> Protect PIN and account information.
+- Abstraction -> Hide internal banking operations.
+- Inheritance -> Different types of accounts.
+- Polymorphism -> Different transaction behaviors.
+
+
+PhonePe
+
+Possible classes:
+- User
+- BankAccount
+- Transaction
+- UPIPayment
+- Wallet
+- Notification
+
+OOP concepts:
+- Encapsulation -> Protect account and payment information.
+- Abstraction -> Show simple payment options while hiding internal processing.
+- Polymorphism -> Support different payment methods.
+- Inheritance -> Represent different types of users or accounts.
+
+
+Amazon
+
+Possible classes:
+- Customer
+- Product
+- Cart
+- Order
+- Payment
+- Delivery
+
+Typical flow:
+
+Customer
+   |
+   v
+Cart
+   |
+   v
+Order
+   |
+   v
+Payment
+   |
+   v
+Delivery
+
+Each entity can be represented as a class, and individual entities can be represented as objects.
+
+
+8. EASY WAY TO REMEMBER
+
+OOP
+|
+|-- Class
+|     -> Blueprint
+|
+|-- Object
+|     -> Instance of a class
+|
+|-- 4 Pillars
+      |
+      |-- Encapsulation
+      |     -> Protect data
+      |
+      |-- Inheritance
+      |     -> Reuse code
+      |
+      |-- Polymorphism
+      |     -> Same operation, different behavior
+      |
+      |-- Abstraction
+            -> Hide complexity
+
+
+9. INTERVIEW ONE-LINE ANSWER
+
+OOP is a programming paradigm that organizes software around classes and objects, making large applications easier to organize, reuse, maintain, secure, and extend.
+
+10. TYPES OF ATTRIBUTES
+
+An attribute is a variable that belongs to a class or object. It represents the data or state of an object.
+
+10.1 INSTANCE ATTRIBUTE
+
+An instance attribute belongs to a particular object. Each object can have its own different value.
+
+Real-world example: PhonePe User
+
+User 1:
+- Name: Srinivas
+- Balance: ₹5,000
+
+User 2:
+- Name: Rahul
+- Balance: ₹10,000
+
+The values are different for each object.
+
+In simple words:
+Instance Attribute = Data that belongs to each individual object.
+
+
+10.2 CLASS ATTRIBUTE
+
+A class attribute belongs to the class and is shared by all objects of that class.
+
+Real-world example: Instagram
+
+Class: User
+
+Class attribute:
+- Platform = "Instagram"
+
+Every User object can access the same platform value.
+
+In simple words:
+Class Attribute = Data shared by all objects of a class.
+
+
+INSTANCE ATTRIBUTE vs CLASS ATTRIBUTE
+
+Instance Attribute:
+- Belongs to an object.
+- Each object can have a different value.
+- Example: user name, balance, phone number.
+
+Class Attribute:
+- Belongs to the class.
+- Shared by all objects.
+- Example: platform name, company name, common tax rate.
+
+
+11. TYPES OF METHODS
+
+A method is a function defined inside a class.
+
+There are three commonly discussed types of methods in Python OOP:
+
+1. Instance Method
+2. Class Method
+3. Static Method
+
+
+11.1 INSTANCE METHOD
+
+An instance method works with the data of a particular object.
+
+It takes self as its first parameter.
+
+Real-world example: PhonePe
+
+A User object can check its own balance.
+
+Example:
+- User has balance.
+- User can check_balance().
+
+In simple words:
+Instance Method = Works with individual object data.
+
+
+11.2 CLASS METHOD
+
+A class method works with the class itself rather than a particular object.
+
+It takes cls as its first parameter and is normally created using @classmethod.
+
+Real-world example: Amazon
+
+Amazon can use a class method for operations involving class-level information or for creating objects using class-level data.
+
+In simple words:
+Class Method = Works with class-level data.
+
+
+11.3 STATIC METHOD
+
+A static method does not depend on either the object or the class.
+
+It does not require self or cls.
+
+It is generally used for a utility operation related to the class.
+
+Real-world example: PhonePe
+
+PhonePe may need to validate whether a UPI ID has the correct format.
+
+This validation does not need a particular user's data.
+
+Example:
+- validate_upi_id()
+
+In simple words:
+Static Method = Utility function logically related to a class.
+
+
+12. TYPES OF METHODS - QUICK COMPARISON
+
+Instance Method:
+- First parameter: self
+- Works with: Object
+- Can access: Instance attributes and class attributes
+- Example: User.check_balance()
+
+Class Method:
+- First parameter: cls
+- Works with: Class
+- Can access: Class attributes
+- Example: User.create_default_user()
+
+Static Method:
+- First parameter: None
+- Works with: Neither object nor class directly
+- Used for: Utility operations
+- Example: PhonePe.validate_upi_id()
+
+
+13. EASY WAY TO REMEMBER
+
+ATTRIBUTES:
+
+Instance Attribute
+    -> Belongs to each object
+    -> Different values possible
+
+Class Attribute
+    -> Belongs to class
+    -> Shared by objects
+
+
+METHODS:
+
+Instance Method
+    -> self
+    -> Object-related
+
+Class Method
+    -> cls
+    -> Class-related
+
+Static Method
+    -> No self / cls
+    -> Utility-related
