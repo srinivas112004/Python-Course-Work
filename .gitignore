@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Sample directory
+Sample/
+HDFC LOAN/
+OOP'S Practice/
+venv/
